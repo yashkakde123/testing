@@ -1,0 +1,106 @@
+{
+        "intents": [
+            {
+                "tag": "greeting",
+                "patterns": ["Hi", "Hello", "Hey","how are you?"],
+                "responses": ["Hello! How can I assist you?", "I'am just doing fine,how are you?,How can i assist you today?"],
+                "context": [""]
+            },
+            {
+                "tag": "goodbye",
+                "patterns": ["Bye", "See you later"],
+                "responses": ["Goodbye! Have a great day."],
+                "context": [""]
+            },
+            {
+                "tag": "thanks",
+                "patterns": ["Thanks", "Thank you"],
+                "responses": ["You're welcome!", "No problem."],
+                "context": [""]
+            },
+            {   "tag": "options",
+                "patterns": ["what is your name","who are you"],
+                "responses": ["Hey there! I'm Bandhu, the chatbot from the Emergicon department.How can I assist you today?" ],
+                "context": [""]
+            },
+           {
+                "tag": "Department_info",
+                "patterns": ["who is the hod of department","when was the emgering department was formed/establish?"],
+                "responses": ["Dr. Hemant Turkar is the HOD of the department ", "The Emgering Department was formed on 2021.","The Emgering Department was establish on 2021" ],
+                "context": [""]
+            },
+            {
+                "tag": "noanswer",
+                "patterns": [],
+                "responses": ["I'm sorry, I didn't understand that."],
+                "context": [""]
+            },
+            {
+                "tag": "timetable",
+                "patterns": ["Show me the timetable"],
+                "responses": [
+                    {
+                        "text": "The timetable is as follows:",
+                        "timetable": {
+                            "Monday": {
+                                "9:00 AM - 10:00 AM": {"subject": "DIVP", "teacher": "Mr.Vivek Sir"},
+                                "10:30 AM - 11:30 AM": {"subject": "IOT&ML", "teacher": "Mrs.Mayuri Mam"}
+                            },
+                            "Tuesday": {
+                                "9:00 AM - 10:00 AM": {"subject": "DL", "teacher": "Mrs.Neha Mam"},
+                                "10:30 AM - 11:30 AM": {"subject": "Mini Project", "teacher": "Mr.Ravi Sir"}
+                            },
+                            "Wednesday": {
+                                "9:00 AM - 10:00 AM": {"subject": "CD", "teacher": "Komal mam"},
+                                "10:30 AM - 11:30 AM": {"subject": "Cloud computing", "teacher": "Dr.Hemant Sir"}
+                            }
+                        }
+                    }
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "Creation_of_bandhu",
+                "patterns": ["who created you"],
+                "responses": ["I was Created by Team BANDHU ,the team members of bandhu are :- 1.Vidit Khairkar 2.Falguni Kalambe 3.Samyak Manwatkar 4.Yash kakde"],
+                "context": [""]
+            },
+            {
+                "tag": "Vidit_info",
+                "patterns": ["Who is Vidit?/who is vidit khairkar"],
+                "responses": ["Vidit is a 3rd year student of sb jain college currently pursing is B.tech degree and vidit has done all the integrations from creating a  chatbot training stage to deveploment "],
+                "context": [""]
+
+            },
+            {
+                "tag": "Falguni_info",
+                "patterns": ["Who is Falguni?/who is Falguni Kalambe"],
+                "responses": ["Vidit is a 3rd year student of sb jain college currently pursing is B.tech degree  and Falguni has done all the design and  ui/ux in this project"],
+                "context": [""]
+
+            },
+            {
+                "tag": "Samyak_info",
+                "patterns": ["Who is Samyak?/who is Samyak Manwatkar"],
+                "responses": ["Vidit is a 3rd year student of sb jain college currently pursing is B.tech degree  and Samyak has contributed frontendend in this project"],
+                "context": [""]
+
+            },
+            {
+                "tag": "Yash_info",
+                "patterns": ["Who is Yash?/who is Yash kakd"],
+                "responses": ["Yash is a 3rd year student of sb jain college currently pursing is B.tech degree and yash has contributed backend in this project"],
+                "context": [""]
+
+            },
+            {
+                "tag": "student_info",
+                "patterns": ["how many students are there in department?","how many students are there in 3 year AIML?","how many students are there in 3 year AIDS?"],
+                "responses": ["The number of students in the department is currently 280.","There are currently 70 students in 3 year AIML","There are currently 70 students in 3 year AIML"],
+                "context": [""]
+            }
+
+
+        ]
+    }
+     
